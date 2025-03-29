@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Pokémon GO Web Store by Stark</title>
+    <link rel="stylesheet" href="../Assets/styles.css">
+    <link rel="stylesheet" href="../Assets/cart.css">
+</head>
+<body>
+    <!-- Header Banner -->
+    <div class="header-banner">
+        <p class="header-banner__message">Free shipping on orders over $50!</p>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="main-nav-container container">
+            <div class="logo">
+                <a href="../index.html" class="logo-link">
+                    <img src="../Assets/images/logo.png" alt="Pokémon GO Web Store">
+                    <span class="site-logo__name">Pokémon GO Web Store by Stark</span>
+                </a>
+            </div>
+            <nav class="nav-buttons">
+                <div class="secondary-nav">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="cart.html" class="cart-link">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-count">3</span>
+                    </a>
+                </div>
+                <a href="../auth/login.html" class="auth-btn">Sign In</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <h1 class="cart-title">Shopping Cart</h1>
+        <div class="cart-page-container">
+            <div class="recommendation-card">
+                <h2>Recommended for You</h2>
+                <div class="recommended-item">
+                    <div class="item-image">
+                        <img src="../Assets/images/item_incense.png" alt="Incense">
+                    </div>
+                    <div class="item-details">
+                        <h3>Incense</h3>
+                        <p>Attract Pokémon to your location for 30 minutes</p>
+                    </div>
+                    <div class="item-price">$0.99</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="cart-container">
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="../Assets/images/coin-bundle-xxsmall.png" alt="PokéCoins">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3>100 PokéCoins</h3>
+                            <div class="coin-details">
+                                <div class="coin-amount">100 PokéCoins</div>
+                                <div class="coin-bonus">10 Web Store Bonus Coins</div>
+                                <div class="coin-total">100 + 10 Web Store Bonus = 110 total PokéCoins</div>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">$0.99</div>
+                        <button class="remove-item">×</button>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="../Assets/images/mystery_bundle.png" alt="Mystery Bundle">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3>Mystery Bundle</h3>
+                            <p>Limited time bundle with special items!</p>
+                        </div>
+                        <div class="cart-item-price">$4.99</div>
+                        <button class="remove-item">×</button>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="../Assets/images/item_max_boost.png" alt="Max Mushroom Boost">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3>Max Mushroom Boost</h3>
+                            <p>Double the damage your Pokémon deals in battles!</p>
+                        </div>
+                        <div class="cart-item-price">$0.99</div>
+                        <button class="remove-item">×</button>
+                    </div>
+                </div>
+
+                <div class="cart-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-item">
+                        <span>Subtotal</span>
+                        <span>$6.97</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Tax (10%)</span>
+                        <span>$0.70</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total</span>
+                        <span>$7.67</span>
+                    </div>
+                    <a href="checkout.html" class="checkout-button">Proceed to Checkout</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">About</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Community Guidelines</a></li>
+                    <li><a href="#">Safety Center</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Intellectual Property</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Social</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><img src="../Assets/images/facebook.png" alt="Facebook"></a>
+                    <a href="#" class="social-link"><img src="../Assets/images/twitter.png" alt="Twitter"></a>
+                    <a href="#" class="social-link"><img src="../Assets/images/instagram.png" alt="Instagram"></a>
+                    <a href="#" class="social-link"><img src="../Assets/images/youtube.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom__content">
+                <p class="footer-copyright">© Images used is Niantic and this project is for educational purposes only and no copyright infringement is intended.</p>
+                <div class="footer-badges">
+                    <img src="../Assets/images/rating_pegi.png" alt="PEGI Rating" class="footer-badge">
+                    <img src="../Assets/images/rating_esrb.png" alt="ESRB Rating" class="footer-badge">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../Assets/script.js"></script>
+    <script type="module" src="../Assets/auth.js"></script>
+    <script type="module" src="../Assets/cart.js"></script>
+</body>
+</html> 
