@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login : Pokémon GO Web Store</title>
+    <link rel="stylesheet" href="../Assets/styles.css">
+    <link rel="stylesheet" href="../Assets/auth.css">
+</head>
+<body>
+    <div id="__next">
+        <div class="min-h-screen webstore__background">
+            <header class="main-header">
+                <div class="header-banner">
+                    <p class="header-banner__message">15% discount for your first Web Store purchase on any item $9.99 or more!</p>
+                </div>
+                <nav class="main-nav-container">
+                    <div class="container">
+                        <div class="logo">
+                            <a href="../index.html" class="logo-link">
+                                <img src="../Assets/images/logo.png" alt="Pokémon GO Store">
+                                <span class="site-logo__name">Web Store</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <main class="auth-container">
+                <div class="auth-card">
+                    <div class="auth-header">
+                        <h1>Welcome Back!</h1>
+                        <p>Sign in to your Pokémon GO account</p>
+                    </div>
+                    <form id="loginForm" class="auth-form">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                            <span class="error-message" id="passwordError"></span>
+                        </div>
+                        <button type="submit" class="auth-button">Sign In</button>
+                    </form>
+                    <div class="auth-footer">
+                        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="main-footer">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3 class="footer-title">Pokémon GO</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Community Guidelines</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3 class="footer-title">Legal</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Intellectual Property</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3 class="footer-title">Support</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Parent's Guide</a></li>
+                            <li><a href="#">Safety Center</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom__content">
+                        <p class="footer-copyright">© 2024 Niantic, Inc. © 2024 Pokémon. © 1995-2024 Nintendo/Creatures Inc./GAME FREAK inc.</p>
+                        <div class="footer-badges">
+                            <img src="../Assets/images/pegi.png" alt="PEGI" class="footer-badge">
+                            <img src="../Assets/images/esrb.png" alt="ESRB" class="footer-badge">
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="messageModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <h2 id="modalTitle"></h2>
+                <p id="modalMessage"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Assets/auth.js"></script>
+</body>
+</html> 

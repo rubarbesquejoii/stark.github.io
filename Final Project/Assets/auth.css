@@ -1,0 +1,250 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    padding: 2rem;
+}
+
+.auth-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.auth-header h1 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.auth-header p {
+    color: #7f8c8d;
+    font-size: 1rem;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #24ccaa;
+    box-shadow: 0 0 0 2px rgba(36, 204, 170, 0.1);
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.8rem;
+    min-height: 1.2rem;
+}
+
+.auth-button {
+    background: linear-gradient(315deg, #24ccaa, #a2db95);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 1rem;
+}
+
+.auth-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(36, 204, 170, 0.2);
+}
+
+.auth-button:active {
+    transform: translateY(0);
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #7f8c8d;
+}
+
+.auth-footer a {
+    color: #24ccaa;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.auth-footer a:hover {
+    color: #1a8f7a;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .auth-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .form-group input {
+        padding: 0.7rem;
+    }
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    position: relative;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+    color: #333;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-body h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.modal-body p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.modal.show {
+    display: flex;
+}
+
+/* Profile Styles */
+.profile-content {
+    padding: 1rem 0;
+}
+
+.profile-section {
+    margin-bottom: 2rem;
+}
+
+.profile-section h2 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.profile-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.profile-field label {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.profile-field p {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0.5rem;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+#logoutBtn {
+    width: 100%;
+    background: linear-gradient(315deg, #e74c3c, #c0392b);
+    margin-top: 1rem;
+}
+
+#logoutBtn:hover {
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.2);
+} 
